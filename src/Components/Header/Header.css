@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 40px;
+}
+.navbar a{
+    font-size: medium;
+}
+.navbar-brand{
+    margin-left: 500px;
+}
+.btn{
+    height: 30px;
+    text-align: center;
+    padding-bottom: 25px;
+    width: 25%;
+    font-size: small;
+    margin-left: 300px;
+}

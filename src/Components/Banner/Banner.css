@@ -1,0 +1,264 @@
+
+
+  .dashboard-container {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .sidebar {
+    height: 1000px;
+    width: 200px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 19px;
+  }
+  .sidebar button{
+    margin: 20px;
+    width: 100px;
+    height: 65px;
+    background-color: white;
+    color: black;
+    align-content: center;
+  }
+  .sidebar .btn1{
+    width: 65px;
+    height: 20px;
+    padding-bottom: 20px;
+    margin-left: 35px;
+    border: none;
+    font-size: small;
+  }
+  .sidebar .btn1:hover{
+    border: 1px red solid;
+    border-radius: 5px;
+    color: red;
+  }
+  .sidebar button:hover{
+    border: blue solid 1px;
+    color: blue; 
+  }
+.icon{
+    margin-left: 6px;
+}
+.icons{
+    margin-left: 24px;
+    align-items: center;
+    margin-right: 20px;
+}
+  .content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    width: 4px;
+ 
+  }
+
+  .sidebar-btn {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .dotted{
+    border: 1px dotted black;
+  }
+  .contentheader{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 50px;
+  
+  }
+  .contentheader button{
+    border: 1px solid white;
+    background-color: white;
+    height: 60px;
+    width: 180px;
+    transition: border-color 0.3s ease;
+  }
+  .contentheader button:hover{
+    color: blue;
+    border: 1px solid white;
+    
+  }
+  .contentheader button:checked{
+    border: 1px solid white;
+    color: blue;
+  }
+  .contentbanner{
+    width: 100%;
+    height: 200px;
+  }
+  .banners {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    height: 120px;
+  }
+ 
+
+  .row-boxes {
+    display: flex;
+  }
+  
+  .box {
+    flex: 1;
+    background-color: white;
+    border-right: 1px solid #ccc;
+    border-bottom:1px solid #ccc ;
+    padding: 20px;
+    width: auto;
+    height: 120px;
+    text-align: center;
+    margin-right: 10px; 
+  }
+
+  .box p{
+      width: 10px;
+      font-size: large;
+      font-weight: 500;
+      display: inline;  
+      margin-right: 30px; 
+     
+    }
+  .iconss{
+    width: 30px;
+    height: 40px;
+    
+  }
+  .box .fi{
+    color: green;
+    font-size: small;
+
+  }
+  
+  .iconss{
+    size: 90px;
+    color: blueviolet;
+    background-color: lightgrey;
+  }
+
+ 
+.secondcontent{
+    height: 400px;
+    width: 100%;
+    margin-left: 10px;
+    gap: 50px;
+}
+.boxes{
+    display: flex;
+    gap: 50px;
+}
+.newbox{
+  display: flex;
+  gap: 70px;
+ 
+}
+.newass{
+  flex: 1;
+    height: 200px;
+    width: 130%;
+    border: 1px  gray dotted;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: whitesmoke;
+
+}
+.newass h5{
+    text-align: center;
+}
+.newass .assicon{
+    width: 60px;
+    height: 60px;
+    border: 1px  gainsboro;
+    border-radius: 100px;
+    background-color: white;
+    color: blue;
+    margin-top: 20px;
+    margin-left: 140px;
+    padding: 10px;
+}
+.newass p{
+    font-size: small;
+    font-weight: 500;
+    text-align: center;
+}
+.mathass{
+  flex: 1;
+    height: 200px;
+    width: 130%;
+    border: 1px solid lightgrey ;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: white;
+}  
+.mathass h5{
+    text-align: start;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.mathass .pp :first-child{
+    font-weight: 500;
+    border-right: 1px solid gray;
+    width: 9%;
+    margin-right: 9px;
+}
+.pp{
+    display: flex;
+    border-bottom: 1px dotted gray;
+}
+.pp .fp{
+    color: gray;
+    font-size: small;
+    margin-top: 2px;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+}
+.bottom .questions{
+    width: 20%;
+    text-align: start;
+    margin-left: 10px;
+}
+.bottom button{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 19%;
+    height: 15px;
+    padding-bottom: 50px;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 70px;
+    background-color: white;
+}
+.mathass .mathicon{
+    width: 15%;
+    height: 40px;
+    margin-top: 10px;
+    color: blueviolet;
+    background-color: lightgrey;
+
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 400px;
+  height: 100%;
+  width: 40%;
+}
+
+Form {
+  max-width: 400px;
+  width: 100%;
+}
+.btns{
+ height: 35px;
+ align-items: center;
+ align-content: center;
+ margin-left: 150px;
+ margin-top: 20px;
+}
