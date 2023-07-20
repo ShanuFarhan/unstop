@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Banner.css"
 import { Form, Button,Modal,Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {AiOutlineClose} from 'react-icons/ai'
 import { LuLayoutDashboard } from 'react-icons/lu'
 import { FaRegEdit } from 'react-icons/fa'
 import { BsQuestionSquare } from 'react-icons/bs'
@@ -15,7 +16,14 @@ import {TbAdjustmentsShare} from 'react-icons/tb'
 import {BsBagCheck} from 'react-icons/bs'
 const Banner = () => {
     const [showForm, setShowForm] = useState(false);
-
+    const [showSidebar, setShowSidebar] = useState(false);
+    const[close,setClose]=useState(true);
+    const handleSidebarToggle = () => {
+      setShowSidebar(!showSidebar);
+    };
+    const handleClose=()=>{
+        setClose(false)
+    }
     const handleClick = () => {
       setShowForm(true);
     };
@@ -65,21 +73,47 @@ const Banner = () => {
             </Form.Group>
 
             <Button className='btns' variant="primary" type="submit">
-              Submit
+              Next
             </Button>
           </Form>
         </Modal.Body>
       </Modal>
       </div>
                 <>
-            <div class="sidebar">
-                <button class="btn sidebar-btn"><LuLayoutDashboard />Dashboard</button>
-                <button class="btn sidebar-btn"><FaRegEdit />Assessment</button>
+                {close && 
+            <div class="sidebarr">
+            
+            <Container>
+            
+        <Row>
+       
+          <Col md={3} className={`sidebar ${showSidebar ? 'show' : ''}`}>
+          
+          <div>
+            <AiOutlineClose className='close' onClick={handleClose}/>
+            <button class="btn sidebar-btn"><LuLayoutDashboard />Dashboard</button>
+            <button class="btn sidebar-btn"><FaRegEdit />Assessment</button>
                 <button class="btn sidebar-btn"><BsQuestionSquare className='icon' />MyLibrary</button>
                 <div className="dotted"></div>
                 <button class='btn1 sidebar-btn'>Admin</button>
                 <button class='btn sidebar-btn'><TbStatusChange className='icons' />Round Status</button>
+                </div>
+
+                </Col>
+          
+          <Col md={9}>
+            <Button className="sidebar-toggle-btn" onClick={handleSidebarToggle}>
+              ☰
+            </Button>
+        
+          </Col>
+
+        </Row>
+
+      </Container>
+            
             </div>
+}
             <div class="content">
                 <Container>
                 <div className="contentheader">

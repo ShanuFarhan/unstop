@@ -4,18 +4,36 @@
 }
 .navbar{
     height: 40px;
+    
 }
 .navbar a{
     font-size: medium;
 }
 .navbar-brand{
-    margin-left: 500px;
+    margin-left: 200px;
 }
 .btn{
     height: 30px;
     text-align: center;
     padding-bottom: 25px;
-    width: 25%;
+    width: 9%;
     font-size: small;
-    margin-left: 300px;
+    margin-left: 600px;
+}
+.options{
+    background-color: black;
+    color: white;
+    width: 10%;
+    border-radius: 5px;
+    border: none;
+    font-size: small;
+}
+option{
+    font-size: small;
+    padding: 5px;
+
+}
+.handicon{
+    border: 1px solid;
+    margin-left: 0px;
 }

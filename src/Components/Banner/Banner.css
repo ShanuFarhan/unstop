@@ -3,6 +3,7 @@
   .dashboard-container {
     display: flex;
     flex-direction: row;
+    height: auto;
     
   }
 
@@ -78,11 +79,13 @@
   .contentheader button:hover{
     color: blue;
     border: 1px solid white;
+
     
   }
-  .contentheader button:checked{
+  .contentheader button:active{
     border: 1px solid white;
     color: blue;
+    border-bottom: blue  solid;
   }
   .contentbanner{
     width: 100%;
@@ -173,7 +176,7 @@
     background-color: white;
     color: blue;
     margin-top: 20px;
-    margin-left: 140px;
+    margin-left: 120px;
     padding: 10px;
 }
 .newass p{
@@ -261,4 +264,65 @@ Form {
  align-content: center;
  margin-left: 150px;
  margin-top: 20px;
+}
+
+
+.sidebarr{
+  padding: 20px;
+}
+.sidebar {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar-toggle-btn {
+  display: none;
+  margin-bottom: 10px;
+}
+.close{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    width: 200px;
+    z-index: 999;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .sidebar-toggle-btn {
+    position: absolute;
+    display: block;
+    right: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding-right:20px;
+    
+  }
+  .close{
+    display: block;
+  }
 }

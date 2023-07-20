@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { auth, provider } from "../../Firebase/config"
 import { signInWithPopup } from 'firebase/auth'
 import { Navbar, Nav } from 'react-bootstrap';
+import {FaRegHandPaper} from 'react-icons/fa'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Header.css"
 const Header = () => {
@@ -41,17 +42,26 @@ const Header = () => {
   return (
    
     <>{showNavbar && (
-       <Navbar bg="dark" variant="dark" expand="lg">
-        <Navbar.Brand href="#home">untitled</Navbar.Brand>
       
+       <Navbar bg="dark" variant="dark" expand="lg" fixed=''>
+        <Navbar.Brand href="">
+          <FaRegHandPaper className='handicon' size={20} />
+        </Navbar.Brand>
+        <Navbar.Brand href="#home">untitled</Navbar.Brand>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <button onClick={handleClick} class="btn btn-primary">Login or Create acount</button>
+          <button onClick={handleClick} class="btn btn-primary">Login</button>
         </div>
-        <Nav className="ml-auto">
-          <Nav.Item>
-            {/* <Icon icon="fullscreen" onClick={handleFullScreen} className="fullscreen-icon"/> */}
-          </Nav.Item>
-        </Nav>
+        
+            <select className='options'>
+              <option  defaultValue>option</option>
+              <option value="fit screen">fit screen(100%)</option>
+              <option value="">fit width</option>
+              <option value="">Show sidebar</option>
+              <option value="">show hotspot</option>
+              <option value="">Accessability settings</option>
+              <option value="">Disable default</option>
+            </select>
+          
         </Navbar>
     )}
     </>
